@@ -1,16 +1,21 @@
-import { Row, Typography, Col, Image, Switch } from 'antd';
+import { Row, Typography, Col, Image, Switch, Result } from 'antd';
 import { title1, title2, title3, title4, paragraph1, paragraph2, paragraph3, paragraph4, paragraph5, paragraph6, paragraph7, paragraph8, paragraph9 } from "./language/language"
 import { useState } from 'react';
+import { GiRabbit } from "react-icons/gi";
 
 const { Title, Paragraph, Text, Link } = Typography;
 
 
 const App = () => {
   const [translate, setTranslate] = useState<boolean>(false)
-  const blockContent = "test ajkshd jkash jkashd jkashdjk ahsdjk ashd kjas "
 
   return (<Row>
-    <Col sm={24}>
+
+    <Result
+      icon={<GiRabbit color='blue' size={100} />}
+      title="Coming soon..."
+    />
+    {/* <Col sm={24}>
       <Switch unCheckedChildren={<div>TR</div>} checkedChildren={<div>EN</div>} onChange={(checked) => setTranslate(checked)} />
     </Col>
 
@@ -72,7 +77,7 @@ const App = () => {
           </li>
         </ul>
       </Paragraph>
-    </Col>
+    </Col> */}
 
   </Row>
   )
