@@ -1,5 +1,5 @@
 import { Row, Typography, Col, Image, Switch, Result } from 'antd';
-import { title1, title2, title3, title4, paragraph1, paragraph2, paragraph3, paragraph4, paragraph5, paragraph6, paragraph7, paragraph8, paragraph9 } from "./language/language"
+import { title1, title2, title3, paragraph1, paragraph2, paragraph3, paragraph4, paragraph5, paragraph6 } from "./language/language"
 import { useState } from 'react';
 import { GiRabbit } from "react-icons/gi";
 
@@ -54,25 +54,9 @@ const App = () => {
     </Col>
 
     <Col xs={{ span: 12 }}>
-      <Image width={"100%"} src='https://cdn-blog.scalablepath.com/uploads/2022/12/spa-va-mpa-key-features-1024x800.png' />
+      <Image width={"100%"} src='https://miro.medium.com/v2/resize:fit:1400/1*pJRJgw1Vj-1MjhtQFZAZRA.png' />
     </Col>
 
-    <Col sm={24}>
-      <Title level={3}>{title4(translate)}</Title>
-      <Paragraph>
-        <ul>
-          <li>
-            {paragraph7(translate)}
-          </li>
-          <li>
-            {paragraph8(translate)}
-          </li>
-          <li>
-            {paragraph9(translate)}
-          </li>
-        </ul>
-      </Paragraph>
-    </Col>
 
   </Row>
   )
