@@ -9,15 +9,10 @@ const { Title, Paragraph, Text, Link } = Typography;
 const App = () => {
   const [translate, setTranslate] = useState<boolean>(false)
 
-  return (<Row>
+  return (<Row justify={"center"}>
 
-    <Result
-      icon={<GiRabbit color='blue' size={100} />}
-      title="Coming soon..."
-    />
-    {/* <Col sm={24}>
-      <Switch unCheckedChildren={<div>TR</div>} checkedChildren={<div>EN</div>} onChange={(checked) => setTranslate(checked)} />
-    </Col>
+
+    <Switch unCheckedChildren={<div>TR</div>} checkedChildren={<div>EN</div>} onChange={(checked) => setTranslate(checked)} />
 
     <Col sm={24}>
 
@@ -29,7 +24,7 @@ const App = () => {
 
     </Col>
     <Col sm={8}>
-      <Image width={"80%"} src='https://cdn-blog.scalablepath.com/uploads/2023/01/spa-vs-mpa-architecture-1024x576.png' />
+      <Image width={"80%"} src='https://cdn.dribbble.com/users/52927/screenshots/2436222/remoteserviceanimation800-600.gif' />
     </Col>
     <Col sm={16}>
       <Title level={2}>{title2(translate)}</Title>
@@ -58,7 +53,7 @@ const App = () => {
       </Paragraph>
     </Col>
 
-    <Col xs={{ span: 8, offset: 8 }}>
+    <Col xs={{ span: 12 }}>
       <Image width={"100%"} src='https://cdn-blog.scalablepath.com/uploads/2022/12/spa-va-mpa-key-features-1024x800.png' />
     </Col>
 
@@ -77,7 +72,7 @@ const App = () => {
           </li>
         </ul>
       </Paragraph>
-    </Col> */}
+    </Col>
 
   </Row>
   )
