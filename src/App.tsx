@@ -1,5 +1,5 @@
 import { Row, Typography, Col, Image, Switch, Result } from 'antd';
-import { title1, title2, title3, paragraph1, paragraph2, paragraph3, paragraph4, paragraph5, paragraph6 } from "./language/language"
+import { title1, title2, title3, paragraph1, paragraph2, paragraph3, paragraph4, paragraph5, paragraph6, paragraph7, paragraph8, paragraph9 } from "./language/language"
 import { useState } from 'react';
 import { GiRabbit } from "react-icons/gi";
 
@@ -23,13 +23,26 @@ const App = () => {
       </Paragraph>
 
     </Col>
-    <Col sm={8}>
-      <Image width={"80%"} src='https://cdn.dribbble.com/users/52927/screenshots/2436222/remoteserviceanimation800-600.gif' />
+    <Col sm={10}>
+      <Image width={"90%"} src='https://cdn.dribbble.com/users/52927/screenshots/2436222/remoteserviceanimation800-600.gif' />
     </Col>
-    <Col sm={16}>
+    <Col sm={14}>
       <Title level={2}>{title2(translate)}</Title>
       <Paragraph>
-        {paragraph2(translate)}
+        <ul>
+          <li>
+            {paragraph2(translate)}
+          </li>
+          <li>
+            {paragraph7(translate)}
+          </li>
+          <li>
+            {paragraph8(translate)}
+          </li>
+          <li>
+            {paragraph9(translate)}
+          </li>
+        </ul>
       </Paragraph>
     </Col>
 
