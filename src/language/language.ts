@@ -13,9 +13,6 @@ export const title3 = (translate: boolean) => {
     return translate ? en.title3 : tr.title3
 }
 
-export const title4 = (translate: boolean) => {
-    return translate ? en.title4 : tr.title4
-}
 
 
 export const paragraph1 = (translate: boolean) => {
@@ -42,14 +39,3 @@ export const paragraph6 = (translate: boolean) => {
     return translate ? en.paragraph6 : tr.paragraph6
 }
 
-export const paragraph7 = (translate: boolean) => {
-    return translate ? en.paragraph7 : tr.paragraph7
-}
-
-export const paragraph8 = (translate: boolean) => {
-    return translate ? en.paragraph8 : tr.paragraph8
-}
-
-export const paragraph9 = (translate: boolean) => {
-    return translate ? en.paragraph9 : tr.paragraph9
-}
